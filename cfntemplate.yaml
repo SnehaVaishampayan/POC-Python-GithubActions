@@ -5,8 +5,8 @@ Resources:
   TimeFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: index.handler
-      Runtime: nodejs10.x
+      Handler: lambda_handler
+      Runtime: python3.8
       CodeUri: ./
       Events:
         MyTimeApi:
