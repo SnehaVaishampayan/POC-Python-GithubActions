@@ -1,4 +1,17 @@
+import json
+def lambda_handler(event, context):
+    message = 'Hello'
+    a = {
+        'statusCode': 200,
+        'body': json.dumps({'input': message})
+        }
+    print(a)
+    return {
+        'statusCode': 200,
+        'body': json.dumps({'input': message})
+    }
 
-def lambda_handler():
-    print("Hi, users.")
 
+
+if __name__ == "__main__":
+    lambda_handler({},{})
