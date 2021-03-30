@@ -1,6 +1,6 @@
 import json
 def lambda_handler(event, context):
-    message = 'Hello all'
+    message = 'Hello everybody'
     a = {
         'statusCode': 200,
         'body': json.dumps({'input': message})
