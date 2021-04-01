@@ -1,6 +1,7 @@
+
 import json
 def lambda_handler(event, context):
-    message = 'Hello everybody'
+    message = 'Hello from local ..'
     a = {
         'statusCode': 200,
         'body': json.dumps({'input': message})
@@ -10,8 +11,3 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': json.dumps({'input': message})
     }
-
-
-
-if __name__ == "__main__":
-    lambda_handler({},{})
